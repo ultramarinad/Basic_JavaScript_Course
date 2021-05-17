@@ -1,0 +1,54 @@
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+
+    var x, y;
+
+    function sum(x, y){
+        return x + y;
+    }
+
+    function dif(x, y){
+        return x - y;
+    }
+
+    function multi(x, y){
+        return x * y;
+    }
+
+    function div(x, y){
+        if (y != 0)
+            return x / y;
+        return 0;
+    }
+    
+    x = Math.round(Math.random() * 100);
+        alert("Переменная x равняется: " + x);
+
+    y = Math.round(Math.random() * 100);
+        alert("Переменная y равняется: " + y);
+
+    oper = prompt("Задайте предпочитаемый символ: +, -, /, *")
+
+    function mathOperation(x, y, oper){
+        switch (oper){
+            case "+":
+                alert(sum(x, y));
+                break;
+            case "-":
+                alert(dif(x, y));
+                break;
+            case "/":
+                alert(div(x, y));
+                break;
+            case "*":
+                alert(multi(x, y));
+                break;
+            default:
+                alert("Вы ввели неверный символ");
+                break;
+        }
+    }
+
+    mathOperation(x, y, oper)
+
+</script>
