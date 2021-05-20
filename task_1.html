@@ -1,0 +1,20 @@
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+
+    var x = 2;
+
+    while (x <= 100){
+        var y = 2;
+        while (y <= x){
+            if (x % y == 0){
+                break;
+            }
+            y++
+        }
+        if (y == x){
+            console.log (x);
+        }
+        x++
+    }
+
+</script>

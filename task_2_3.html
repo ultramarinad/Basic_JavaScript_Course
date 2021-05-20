@@ -1,0 +1,54 @@
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+
+//массив с товаром
+    var basket = [
+        {
+            product: "Dress",
+            material: "Coton",
+            color: "Red",
+            size: "22",
+            price: 1800,
+            count: 5
+        },
+
+        {
+            product: "Skirt",
+            material: "Elastane",
+            color: "Pink",
+            size: "25",
+            price: 1300,
+            count: 12
+        },
+
+        {
+            product: "Pants",
+            material: "Coton",
+            color: "Red",
+            size: "21",
+            price: 1390,
+            count: 1
+        },
+
+        {
+            product: "Leggings",
+            material: "Coton",
+            color: "Black",
+            size: "19",
+            price: 1100,
+            count: 9
+        },
+    ]
+
+//подсчет стоимости basket
+    function countBasketPrice(cou){
+        var sum = 0;
+        for(var prod of cou){
+            sum = sum + (prod.price * prod.count)
+        }
+        return sum
+    }
+
+    console.log(countBasketPrice(basket))
+
+</script>
