@@ -1,0 +1,33 @@
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+
+    var randNumber = prompt("Введите значение в диапозоне от 0 до 999:");
+    check = randNumber.length;
+    Object = {};
+    exprom(randNumber);
+    
+
+    function exprom(number) {  
+        if (number > 999 || number < 0){
+            alert("Введеное значение не попадает в необходимый диапазон")
+        } else {
+            switch(check) {
+            case 3:
+                Object.hundreds = number[0];
+                Object.tens = number[1];
+                Object.units = number[2];
+                break;
+            case 2:
+                Object.tens = number[0];
+                Object.units = number[1];
+                break;
+            default:
+                Object.units = number;
+
+            }
+            console.log(Object);
+        }
+        return Object;
+    }
+    
+</script>
