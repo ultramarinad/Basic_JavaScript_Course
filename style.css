@@ -1,0 +1,167 @@
+table {
+    border-collapse: collapse;
+}
+
+td {
+    width: 70px;
+    height: 70px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.white_b, .black_b {
+    border: 1px solid #000;
+}
+
+.white_b{
+    background: #fff;
+}
+
+.black_b {
+    background: #9e0000;
+}
+
+#chess_board_char [content="1"]:after {
+    content: 'П';
+    font-size: 2em;
+    color: #000;
+    text-shadow: 0 0 7px #fff;
+}
+
+#chess_board_char [content="11"]:after {
+    content: 'П';
+    font-size: 2em;
+    color: #000;
+    text-shadow: 0 0 7px rgb(121, 0, 0);
+}
+
+#chess_board_char [content="2"]:after {
+    content: 'К';
+    font-size: 2em;
+    color: #000;
+    text-shadow: 0 0 7px #fff;
+}
+
+#chess_board_char [content="12"]:after {
+    content: 'К';
+    font-size: 2em;
+    color: #000;
+    text-shadow: 0 0 7px rgb(121, 0, 0);
+}
+
+#chess_board_char [content="3"]:after {
+    content: 'С';
+    font-size: 2em;
+    color: #000;
+    text-shadow: 0 0 7px #fff;
+}
+
+#chess_board_char [content="13"]:after {
+    content: 'С';
+    font-size: 2em;
+    color: #000;
+    text-shadow: 0 0 7px rgb(121, 0, 0);
+}
+
+#chess_board_char [content="4"]:after {
+    content: 'Л';
+    font-size: 2em;
+    color: #000;
+    text-shadow: 0 0 7px #fff;
+}
+
+#chess_board_char [content="14"]:after {
+    content: 'Л';
+    font-size: 2em;
+    color: #000;
+    text-shadow: 0 0 7px rgb(121, 0, 0);
+}
+
+#chess_board_char [content="5"]:after {
+    content: 'Ф';
+    font-size: 2em;
+    color: #000;
+    text-shadow: 0 0 7px #fff;
+}
+
+#chess_board_char [content="15"]:after {
+    content: 'Ф';
+    font-size: 2em;
+    color: #000;
+    text-shadow: 0 0 7px rgb(121, 0, 0);
+}
+
+#chess_board_char [content="6"]:after {
+    content: 'Кр';
+    font-size: 2em;
+    color: #000;
+    text-shadow: 0 0 7px #fff;
+}
+
+#chess_board_char [content="16"]:after {
+    content: 'Кр';
+    font-size: 2em;
+    color: #000;
+    text-shadow: 0 0 7px rgb(121, 0, 0);
+}
+
+
+#chess_board_image [content="1"] {
+    background-image: url(chess-figure.png);
+    background-position: 72px -17px;
+}
+
+#chess_board_image [content="11"] {
+    background-image: url(chess-figure.png);
+    background-position: 72px -109px;
+}
+
+#chess_board_image [content="2"] {
+    background-image: url(chess-figure.png);
+    background-position: 146px -17px;
+}
+
+#chess_board_image [content="12"] {
+    background-image: url(chess-figure.png);
+    background-position: 146px -109px;
+}
+
+#chess_board_image [content="3"] {
+    background-image: url(chess-figure.png);
+    background-position: 372px -17px;
+}
+
+#chess_board_image [content="13"] {
+    background-image: url(chess-figure.png);
+    background-position: 372px -109px;
+}
+
+#chess_board_image [content="4"] {
+    background-image: url(chess-figure.png);
+    background-position: -1px -17px;
+}
+
+#chess_board_image [content="14"] {
+    background-image: url(chess-figure.png);
+    background-position: -1px -109px;
+}
+
+#chess_board_image [content="5"] {
+    background-image: url(chess-figure.png);
+    background-position: -154px -17px;
+}
+
+#chess_board_image [content="15"] {
+    background-image: url(chess-figure.png);
+    background-position: -154px -109px;
+}
+
+#chess_board_image [content="6"] {
+    background-image: url(chess-figure.png);
+    background-position: -228px -17px;
+}
+
+#chess_board_image [content="16"] {
+    background-image: url(chess-figure.png);
+    background-position: -228px -109px;
+}
